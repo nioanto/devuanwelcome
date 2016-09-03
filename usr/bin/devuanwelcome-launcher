@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+import os
+import subprocess
+
+HOME = os.path.expanduser("~")
+
+cmdline = subprocess.getoutput("cat /proc/cmdline")
+
+if ((not os.path.exists(HOME + "/.devuan/devuanwelcome/norun.flag")) and ("boot=casper" not in cmdline) and ("boot=live" not in cmdline)):
+    os.system("devuanwelcome")

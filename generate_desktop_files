@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+
+DOMAIN = "devuanwelcome"
+PATH = "/usr/share/devuan/locale"
+
+import os
+import gettext
+import sys
+
+sys.path.append('/usr/lib/devuan/common')
+import additionalfiles
+
+os.environ['LANG'] = "en_US.UTF-8"
+gettext.install(DOMAIN, PATH)
+
+prefix = """[Desktop Entry]
+Exec=devuanwelcome
+Icon=devuanwelcome
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=GNOME;GTK;Settings;DesktopSettings;
+NotShowIn=KDE;
+StartupNotify=false
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/devuanwelcome.desktop", prefix, _("Welcome Screen"), _("Introduction to Devuan"), "")
+
+prefix = """[Desktop Entry]
+Exec=devuanwelcome
+Icon=devuanwelcome
+Terminal=false
+Type=Application
+Encoding=UTF-8
+OnlyShowIn=KDE;
+Categories=System;
+StartupNotify=false
+"""
+
+

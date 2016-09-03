@@ -1,0 +1,13 @@
+[Desktop Entry]
+Exec=devuanwelcome
+Icon=devuanwelcome
+Terminal=false
+Type=Application
+Encoding=UTF-8
+OnlyShowIn=KDE;
+Categories=System;
+StartupNotify=false
+Name=Welcome Screen
+Comment=Introduction to Devuan
+GenericName=Welcome Screen
+Name[en_GB]=devuanwelcome.desktop

@@ -1,0 +1,10 @@
+Package: devuanwelcome
+Version: 1.0
+Architecture: all
+Maintainer: Antonio Volpicelli <nioanto@live.it>
+Installed-Size: 142
+Depends: python3 (>= 3.3), python3-gi, devuan-common
+Section: admin
+Priority: optional
+Description: Welcome screen for Devuan Gnu+Linux
+ Shows important information about the release/edition of Linux Mint.

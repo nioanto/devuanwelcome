@@ -9,7 +9,7 @@ Package: devuanwelcome
 Architecture: all
 Depends: python3 (>= 3.3),
          python3-gi,
-         devuan-common,
          ${misc:Depends},
-Description: Welcome screen for Devuan Gnu+Linux
+		 devuancommon
+Description: Welcome screen for Devuan Gnu/Linux
  Shows important information about the release/edition of Linux Mint.

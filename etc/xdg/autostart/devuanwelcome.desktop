@@ -6,6 +6,6 @@ Icon=gnome-info
 Exec=devuanwelcome-launcher
 Terminal=false
 Type=Application
-Categories=
+Categories=desktop
 
-Name[en_GB]=devuanwelcome.desktop
+Name=devuanwelcome.desktop

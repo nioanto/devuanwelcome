@@ -137,13 +137,13 @@ class DevuanWelcome():
             actions.append(['software', _("Apps"), _("Install additional software")])
 
             if not self.is_lmde:
-                actions.append(['driver', _("Drivers"), _("Install hardware drivers")])
+                # actions.append(['driver', _("Drivers"), _("Install hardware drivers")])
 
-            actions.append(['codecs', _("Multimedia codecs"), _("Add all the missing multimedia codecs")])
-            actions.append(['forums', _("Forums"), _("Seek help from other users in the Devuan forums")])
-            actions.append(['chatroom', _("Chat room"), _("Chat live with other users in the chat room")])
-            actions.append(['get_involved', _("Getting involved"), _("Find out how to get involved in the Devuan project")])
-            actions.append(['donors', _("Donations"), _("Make a donation to the Devuan project")])
+             #actions.append(['codecs', _("Multimedia codecs"), _("Add all the missing multimedia codecs")])
+             actions.append(['forums', _("Forums"), _("Seek help from other users in the Devuan forums")])
+             actions.append(['chatroom', _("Chat room"), _("Chat live with other users in the chat room")])
+             actions.append(['get_involved', _("Getting involved"), _("Find out how to get involved in the Devuan project")])
+             actions.append(['donors', _("Donations"), _("Make a donation to the Devuan project")])
         else:
             actions.append(['new_features', _("New features"), _("See what is new in this release")])
 
@@ -153,8 +153,8 @@ class DevuanWelcome():
             actions.append(['user_guide', _("Documentation"), _("Learn all the basics to get started with Devuan")])
             actions.append(['software', _("Apps"), _("Install additional software")])
 
-            if not self.is_lmde:
-                actions.append(['driver', _("Drivers"), _("Install hardware drivers")])
+            #if not self.is_lmde:
+               # actions.append(['driver', _("Drivers"), _("Install hardware drivers")])
 
             actions.append(['forums', _("Forums"), _("Seek help from other users in the Devuan forums")])
             actions.append(['chatroom', _("Chat room"), _("Chat live with other users in the chat room")])
@@ -241,7 +241,7 @@ class DevuanWelcome():
         value = view.get_model().get_value(treeiter, 1)
 
         if value == "chatroom":
-            os.system("xdg-open irc://webchat.freenode.net/devuan")
+            os.system("xdg-open irc://irc.freenode.net/#devuan")
         elif value == "restore_data":
             if os.path.exists("/usr/bin/devuanbackup"):
                 os.system("/usr/bin/devuanbackup &")
@@ -267,7 +267,7 @@ class DevuanWelcome():
         #elif value == "hardware":
          #   os.system("xdg-open http://community.linuxmint.com/hardware &")
         elif value == "get_involved":
-            os.system("xdg-open http://www.linuxmint.com/getinvolved.php &")
+            os.system("xdg-open https://devuan.org/os/ &")
         elif value == "sponsors":
             os.system("xdg-open https://devuan.org/os/partners/sponsor-an-event &")
         elif value == "donors":
